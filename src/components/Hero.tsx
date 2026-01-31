@@ -29,12 +29,12 @@ const Hero = () => {
           <span className="font-semibold text-foreground">Sumanth & Apoorva</span>{" "}
           from{" "}
           <a 
-            href="https://instagram.com/thraive.ai" 
+            href="https://instagram.com/thraive.in" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="font-semibold text-accent hover:underline"
+            className="font-semibold text-foreground underline hover:no-underline"
           >
-            @thraive.ai
+            @thraive.in
           </a>
         </p>
         
