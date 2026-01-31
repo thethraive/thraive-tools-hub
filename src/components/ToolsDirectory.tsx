@@ -132,7 +132,7 @@ const ToolsDirectory = () => {
                   setSearchQuery("");
                   setSelectedCategory("All");
                 }}
-                className="mt-2 text-accent"
+                className="mt-2 text-foreground underline"
               >
                 Clear filters
               </Button>

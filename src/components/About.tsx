@@ -29,13 +29,13 @@ const About = () => {
             className="bg-foreground text-background hover:bg-foreground/90 rounded-full font-semibold px-8"
           >
             <a
-              href="https://instagram.com/thraive.ai"
+              href="https://instagram.com/thraive.in"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
               <Instagram className="w-5 h-5" />
-              Follow @thraive.ai
+              Follow @thraive.in
             </a>
           </Button>
         </div>

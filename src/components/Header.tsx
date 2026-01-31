@@ -9,7 +9,7 @@ const Header = () => {
           <img 
             src={logo} 
             alt="thrAIve" 
-            className="h-8 w-auto"
+            className="h-12 w-auto"
           />
         </a>
         
@@ -35,13 +35,13 @@ const Header = () => {
         </nav>
 
         <a 
-          href="https://instagram.com/thraive.ai" 
+          href="https://instagram.com/thraive.in" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
           <Instagram className="w-5 h-5" />
-          <span className="hidden sm:inline">@thraive.ai</span>
+          <span className="hidden sm:inline">@thraive.in</span>
         </a>
       </div>
     </header>

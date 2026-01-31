@@ -21,11 +21,11 @@ export const categories: Category[] = [
 ];
 
 export const categoryColors: Record<Category, string> = {
-  "Coding AI": "bg-accent text-accent-foreground",
-  "Vibe Coding": "bg-success text-success-foreground",
+  "Coding AI": "bg-foreground text-background",
+  "Vibe Coding": "bg-foreground text-background",
   "Image Generation": "bg-foreground text-background",
-  "Video Generation": "bg-highlight text-highlight-foreground",
-  "Presentations": "bg-foreground/80 text-background",
+  "Video Generation": "bg-foreground text-background",
+  "Presentations": "bg-foreground text-background",
 };
 
 export const tools: Tool[] = [

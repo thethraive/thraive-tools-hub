@@ -34,7 +34,7 @@ const Footer = () => {
               About
             </a>
             <a 
-              href="https://instagram.com/thraive.ai" 
+              href="https://instagram.com/thraive.in" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -44,13 +44,13 @@ const Footer = () => {
           </nav>
           
           <a
-            href="https://instagram.com/thraive.ai"
+            href="https://instagram.com/thraive.in"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
           >
             <Instagram className="w-5 h-5" />
-            <span className="text-sm">@thraive.ai</span>
+            <span className="text-sm">@thraive.in</span>
           </a>
         </div>
         
