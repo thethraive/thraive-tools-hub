@@ -15,8 +15,7 @@ const About = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            We're <span className="font-semibold text-foreground">Sumanth & Apoorva</span>, 
-            digital creators on a mission to simplify AI, tech, tools, news & websites for everyone.
+            We're digital creators on a mission to simplify AI, tech, tools, news & websites for everyone.
           </p>
           
           <p className="text-muted-foreground max-w-xl mx-auto">
