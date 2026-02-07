@@ -26,8 +26,6 @@ const Hero = () => {
           style={{ animationDelay: "0.1s" }}
         >
           Curated by{" "}
-          <span className="font-semibold text-foreground">Sumanth & Apoorva</span>{" "}
-          from{" "}
           <a 
             href="https://instagram.com/thraive.in" 
             target="_blank" 
