@@ -42,7 +42,7 @@ const Hero = () => {
           className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          Your go-to directory for the best AI tools across coding, design, video, and presentations
+          Your go-to directory for the best AI tools and courses across coding, design, video, and more
         </p>
         
         <div 

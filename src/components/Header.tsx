@@ -21,16 +21,16 @@ const Header = () => {
             Tools
           </a>
           <a 
+            href="#courses" 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Courses
+          </a>
+          <a 
             href="#about" 
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             About
-          </a>
-          <a 
-            href="#testimonials" 
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Testimonials
           </a>
         </nav>
 
