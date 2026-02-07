@@ -1,0 +1,88 @@
+export interface Course {
+  name: string;
+  url: string;
+  description: string;
+  category: CourseCategory;
+  subcategory: string;
+  platform: string;
+  instructor: string;
+  level: string;
+  pricing: string;
+  priceAmount: number;
+  rating: number;
+  duration: string;
+  certificate: boolean;
+  featured: boolean;
+}
+
+export type CourseCategory =
+  | "AI & ML"
+  | "LLMs & Prompting"
+  | "Data Science"
+  | "Web Development"
+  | "Cloud & DevOps"
+  | "Business & Product";
+
+export const courseCategories: CourseCategory[] = [
+  "AI & ML",
+  "LLMs & Prompting",
+  "Data Science",
+  "Web Development",
+  "Cloud & DevOps",
+  "Business & Product",
+];
+
+export const courses: Course[] = [
+  // AI & ML
+  { name: "Machine Learning Specialization", url: "https://www.coursera.org/specializations/machine-learning-introduction", description: "The gold standard ML course by Andrew Ng", category: "AI & ML", subcategory: "Machine Learning", platform: "Coursera", instructor: "Andrew Ng / Stanford", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.9, duration: "3 months", certificate: true, featured: true },
+  { name: "AI For Everyone", url: "https://www.coursera.org/learn/ai-for-everyone", description: "Non-technical introduction to AI concepts and strategy", category: "AI & ML", subcategory: "AI Fundamentals", platform: "Coursera", instructor: "Andrew Ng / DeepLearning.ai", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.8, duration: "4 weeks", certificate: true, featured: true },
+  { name: "MIT 6.S191: Intro to Deep Learning", url: "http://introtodeeplearning.com/", description: "MIT's official introductory course on deep learning", category: "AI & ML", subcategory: "Deep Learning", platform: "MIT OCW", instructor: "Alexander Amini / MIT", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.8, duration: "10 weeks", certificate: false, featured: true },
+  { name: "Practical Deep Learning for Coders", url: "https://course.fast.ai/", description: "Top-down approach to deep learning with practical projects", category: "AI & ML", subcategory: "Deep Learning", platform: "fast.ai", instructor: "Jeremy Howard / fast.ai", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.9, duration: "7 weeks", certificate: false, featured: true },
+  { name: "Deep Learning Specialization", url: "https://www.coursera.org/specializations/deep-learning", description: "Comprehensive deep learning course series", category: "AI & ML", subcategory: "Deep Learning", platform: "Coursera", instructor: "Andrew Ng / DeepLearning.ai", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.9, duration: "5 months", certificate: true, featured: true },
+  { name: "Google AI Essentials", url: "https://www.coursera.org/learn/google-ai-essentials", description: "Google's beginner-friendly AI essentials program", category: "AI & ML", subcategory: "AI Fundamentals", platform: "Coursera", instructor: "Google", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.7, duration: "4 weeks", certificate: true, featured: false },
+  { name: "IBM AI Engineering Professional Certificate", url: "https://www.coursera.org/professional-certificates/ai-engineer", description: "Professional AI engineering certification from IBM", category: "AI & ML", subcategory: "AI Engineering", platform: "Coursera", instructor: "IBM", level: "Intermediate", pricing: "Paid", priceAmount: 49, rating: 4.5, duration: "6 months", certificate: true, featured: false },
+  { name: "CS229: Machine Learning", url: "https://cs229.stanford.edu/", description: "Stanford's graduate-level machine learning course", category: "AI & ML", subcategory: "Machine Learning", platform: "Stanford Online", instructor: "Andrew Ng / Stanford", level: "Advanced", pricing: "Free", priceAmount: 0, rating: 4.9, duration: "11 weeks", certificate: false, featured: false },
+  { name: "Elements of AI", url: "https://www.elementsofai.com/", description: "Free AI course from the University of Helsinki", category: "AI & ML", subcategory: "AI Fundamentals", platform: "MinnaLearn", instructor: "University of Helsinki", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.7, duration: "6 weeks", certificate: true, featured: false },
+  { name: "Neural Networks and Deep Learning", url: "https://www.coursera.org/learn/neural-networks-deep-learning", description: "Foundations of neural networks and deep learning", category: "AI & ML", subcategory: "Deep Learning", platform: "Coursera", instructor: "Andrew Ng / DeepLearning.ai", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.9, duration: "4 weeks", certificate: true, featured: false },
+
+  // LLMs & Prompting
+  { name: "ChatGPT Prompt Engineering for Developers", url: "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/", description: "Learn prompt engineering best practices from OpenAI", category: "LLMs & Prompting", subcategory: "Prompt Engineering", platform: "DeepLearning.ai", instructor: "Isa Fulford & Andrew Ng", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.8, duration: "1 hour", certificate: false, featured: true },
+  { name: "Generative AI with Large Language Models", url: "https://www.coursera.org/learn/generative-ai-with-llms", description: "Deep dive into LLM architecture and fine-tuning", category: "LLMs & Prompting", subcategory: "LLMs", platform: "Coursera", instructor: "AWS & DeepLearning.ai", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.7, duration: "3 weeks", certificate: true, featured: true },
+  { name: "LangChain for LLM Application Development", url: "https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/", description: "Build LLM apps with the LangChain framework", category: "LLMs & Prompting", subcategory: "LLM Apps", platform: "DeepLearning.ai", instructor: "Harrison Chase & Andrew Ng", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.6, duration: "1 hour", certificate: false, featured: true },
+  { name: "Prompt Engineering Specialization", url: "https://www.coursera.org/specializations/prompt-engineering", description: "Master the art and science of prompt engineering", category: "LLMs & Prompting", subcategory: "Prompt Engineering", platform: "Coursera", instructor: "Vanderbilt University", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.5, duration: "2 months", certificate: true, featured: false },
+  { name: "Building Systems with ChatGPT API", url: "https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/", description: "Build complex systems using the ChatGPT API", category: "LLMs & Prompting", subcategory: "LLM Apps", platform: "DeepLearning.ai", instructor: "Isa Fulford & Andrew Ng", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.6, duration: "1 hour", certificate: false, featured: false },
+  { name: "LangChain: Chat with Your Data", url: "https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/", description: "Build RAG systems to chat with your own documents", category: "LLMs & Prompting", subcategory: "RAG", platform: "DeepLearning.ai", instructor: "Harrison Chase", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.5, duration: "1 hour", certificate: false, featured: false },
+  { name: "Finetuning Large Language Models", url: "https://www.deeplearning.ai/short-courses/finetuning-large-language-models/", description: "Learn to fine-tune LLMs for custom use cases", category: "LLMs & Prompting", subcategory: "Fine-tuning", platform: "DeepLearning.ai", instructor: "Sharon Zhou", level: "Advanced", pricing: "Free", priceAmount: 0, rating: 4.4, duration: "1 hour", certificate: false, featured: false },
+  { name: "Building AI Agents with LangGraph", url: "https://www.deeplearning.ai/short-courses/", description: "Build autonomous AI agents using LangGraph", category: "LLMs & Prompting", subcategory: "AI Agents", platform: "DeepLearning.ai", instructor: "LangChain Team", level: "Advanced", pricing: "Free", priceAmount: 0, rating: 4.5, duration: "1 hour", certificate: false, featured: true },
+  { name: "Hugging Face NLP Course", url: "https://huggingface.co/learn/nlp-course", description: "Comprehensive NLP course using the Hugging Face ecosystem", category: "LLMs & Prompting", subcategory: "NLP", platform: "Hugging Face", instructor: "Hugging Face Team", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.7, duration: "Self-paced", certificate: false, featured: false },
+
+  // Data Science
+  { name: "IBM Data Science Professional Certificate", url: "https://www.coursera.org/professional-certificates/ibm-data-science", description: "Complete data science program from IBM", category: "Data Science", subcategory: "Full Program", platform: "Coursera", instructor: "IBM", level: "Beginner", pricing: "Paid", priceAmount: 49, rating: 4.6, duration: "5 months", certificate: true, featured: true },
+  { name: "Google Data Analytics Certificate", url: "https://www.coursera.org/professional-certificates/google-data-analytics", description: "Google's professional data analytics certification", category: "Data Science", subcategory: "Analytics", platform: "Coursera", instructor: "Google", level: "Beginner", pricing: "Paid", priceAmount: 49, rating: 4.8, duration: "6 months", certificate: true, featured: true },
+  { name: "Python for Data Science and AI", url: "https://www.coursera.org/learn/python-for-applied-data-science-ai", description: "Learn Python fundamentals for data science", category: "Data Science", subcategory: "Python", platform: "Coursera", instructor: "IBM", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.5, duration: "5 weeks", certificate: true, featured: false },
+  { name: "Data Science MicroMasters", url: "https://www.edx.org/micromasters/uc-san-diegox-data-science", description: "UC San Diego's comprehensive data science program", category: "Data Science", subcategory: "Full Program", platform: "edX", instructor: "UC San Diego", level: "Intermediate", pricing: "Paid", priceAmount: 1400, rating: 4.5, duration: "10 months", certificate: true, featured: false },
+  { name: "Kaggle Learn Courses", url: "https://www.kaggle.com/learn", description: "Free, practical data science micro-courses on Kaggle", category: "Data Science", subcategory: "Practical", platform: "Kaggle", instructor: "Kaggle Team", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.6, duration: "Self-paced", certificate: true, featured: false },
+  { name: "Statistics with Python Specialization", url: "https://www.coursera.org/specializations/statistics-with-python", description: "Statistics fundamentals using Python", category: "Data Science", subcategory: "Statistics", platform: "Coursera", instructor: "University of Michigan", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.4, duration: "3 months", certificate: true, featured: false },
+
+  // Web Development
+  { name: "The Odin Project", url: "https://www.theodinproject.com/", description: "Free full-stack web development curriculum", category: "Web Development", subcategory: "Full Stack", platform: "The Odin Project", instructor: "Open Source Community", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.8, duration: "Self-paced", certificate: false, featured: true },
+  { name: "freeCodeCamp Full Curriculum", url: "https://www.freecodecamp.org/", description: "Free coding bootcamp with hands-on projects", category: "Web Development", subcategory: "Full Stack", platform: "freeCodeCamp", instructor: "freeCodeCamp", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.8, duration: "Self-paced", certificate: true, featured: true },
+  { name: "CS50's Web Programming", url: "https://cs50.harvard.edu/web/", description: "Harvard's web programming with Python and JavaScript", category: "Web Development", subcategory: "Full Stack", platform: "edX", instructor: "Harvard / David Malan", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.9, duration: "12 weeks", certificate: true, featured: true },
+  { name: "Meta Front-End Developer Certificate", url: "https://www.coursera.org/professional-certificates/meta-front-end-developer", description: "Meta's professional front-end development program", category: "Web Development", subcategory: "Frontend", platform: "Coursera", instructor: "Meta", level: "Beginner", pricing: "Paid", priceAmount: 49, rating: 4.7, duration: "7 months", certificate: true, featured: false },
+  { name: "Full Stack Open", url: "https://fullstackopen.com/en/", description: "University of Helsinki's modern full-stack course", category: "Web Development", subcategory: "Full Stack", platform: "University of Helsinki", instructor: "University of Helsinki", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.8, duration: "Self-paced", certificate: true, featured: true },
+  { name: "The Complete JavaScript Course", url: "https://www.udemy.com/course/the-complete-javascript-course/", description: "Comprehensive JavaScript mastery course", category: "Web Development", subcategory: "JavaScript", platform: "Udemy", instructor: "Jonas Schmedtmann", level: "Beginner", pricing: "Paid", priceAmount: 15, rating: 4.7, duration: "69 hours", certificate: true, featured: false },
+  { name: "React - The Complete Guide", url: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/", description: "Master React including hooks, Redux, and Next.js", category: "Web Development", subcategory: "React", platform: "Udemy", instructor: "Maximilian Schwarzmüller", level: "Intermediate", pricing: "Paid", priceAmount: 15, rating: 4.7, duration: "68 hours", certificate: true, featured: false },
+
+  // Cloud & DevOps
+  { name: "AWS Cloud Practitioner Essentials", url: "https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/", description: "Introduction to AWS cloud concepts and services", category: "Cloud & DevOps", subcategory: "AWS", platform: "AWS Training", instructor: "Amazon Web Services", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.6, duration: "6 hours", certificate: false, featured: true },
+  { name: "Google Cloud Digital Leader", url: "https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training", description: "Google Cloud fundamentals and digital transformation", category: "Cloud & DevOps", subcategory: "GCP", platform: "Coursera", instructor: "Google Cloud", level: "Beginner", pricing: "Paid", priceAmount: 49, rating: 4.5, duration: "2 months", certificate: true, featured: false },
+  { name: "Azure Fundamentals (AZ-900)", url: "https://learn.microsoft.com/en-us/training/paths/az-900-describe-cloud-concepts/", description: "Microsoft Azure cloud fundamentals certification prep", category: "Cloud & DevOps", subcategory: "Azure", platform: "Microsoft Learn", instructor: "Microsoft", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.6, duration: "Self-paced", certificate: true, featured: true },
+  { name: "Docker and Kubernetes: Complete Guide", url: "https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/", description: "Master containerization with Docker and Kubernetes", category: "Cloud & DevOps", subcategory: "Containers", platform: "Udemy", instructor: "Stephen Grider", level: "Intermediate", pricing: "Paid", priceAmount: 15, rating: 4.6, duration: "22 hours", certificate: true, featured: false },
+  { name: "Terraform Associate Certification", url: "https://developer.hashicorp.com/terraform/tutorials", description: "Infrastructure as Code with Terraform", category: "Cloud & DevOps", subcategory: "IaC", platform: "HashiCorp Learn", instructor: "HashiCorp", level: "Intermediate", pricing: "Free", priceAmount: 0, rating: 4.4, duration: "Self-paced", certificate: false, featured: false },
+
+  // Business & Product
+  { name: "AI Product Management Specialization", url: "https://www.coursera.org/specializations/ai-product-management-duke", description: "Learn to manage AI products from Duke University", category: "Business & Product", subcategory: "Product Management", platform: "Coursera", instructor: "Duke University", level: "Intermediate", pricing: "Paid", priceAmount: 49, rating: 4.5, duration: "3 months", certificate: true, featured: false },
+  { name: "Google Project Management Certificate", url: "https://www.coursera.org/professional-certificates/google-project-management", description: "Google's professional project management certification", category: "Business & Product", subcategory: "Project Management", platform: "Coursera", instructor: "Google", level: "Beginner", pricing: "Paid", priceAmount: 49, rating: 4.8, duration: "6 months", certificate: true, featured: true },
+  { name: "Digital Marketing Specialization", url: "https://www.coursera.org/specializations/digital-marketing", description: "Comprehensive digital marketing from UIUC", category: "Business & Product", subcategory: "Marketing", platform: "Coursera", instructor: "University of Illinois", level: "Beginner", pricing: "Paid", priceAmount: 49, rating: 4.5, duration: "8 months", certificate: true, featured: false },
+  { name: "No-Code AI & Machine Learning", url: "https://www.coursera.org/learn/no-code-ai-machine-learning", description: "Build AI solutions without writing code", category: "Business & Product", subcategory: "No-Code AI", platform: "Coursera", instructor: "Duke University", level: "Beginner", pricing: "Free", priceAmount: 0, rating: 4.3, duration: "4 weeks", certificate: true, featured: false },
+];

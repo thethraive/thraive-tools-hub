@@ -28,6 +28,12 @@ const Footer = () => {
               Tools
             </a>
             <a 
+              href="#courses" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Courses
+            </a>
+            <a 
               href="#about" 
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
